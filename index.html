@@ -81,15 +81,19 @@
         function pop_area_0_15_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
+                            <th scope="row">id_lote</th>\
                         <td colspan="2">' + (feature.properties['id_lote'] !== null ? autolinker.link(feature.properties['id_lote'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                            <th scope="row">area_grafica</th>\
                         <td colspan="2">' + (feature.properties['area_grafica'] !== null ? autolinker.link(feature.properties['area_grafica'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                            <th scope="row">area_verificada</th>\
                         <td colspan="2">' + (feature.properties['area_verificada'] !== null ? autolinker.link(feature.properties['area_verificada'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
+                            <th scope="row">resta</th>\
                         <td colspan="2">' + (feature.properties['resta'] !== null ? autolinker.link(feature.properties['resta'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
